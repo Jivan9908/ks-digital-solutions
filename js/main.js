@@ -35,8 +35,8 @@
         else if (iconClass.indexOf('twitter') !== -1) destination = 'https://twitter.com/';
         else if (iconClass.indexOf('instagram') !== -1) destination = 'https://www.instagram.com/';
         else if (iconClass.indexOf('linkedin') !== -1) destination = 'https://www.linkedin.com/';
-        else if (iconClass.indexOf('phone') !== -1 || text.indexOf('(405) 223-1941') !== -1) destination = 'tel:+14052231941';
-        else if (iconClass.indexOf('envelope') !== -1 || text.indexOf('@') !== -1) destination = 'mailto:jivan200202@gmail.com';
+        else if (iconClass.indexOf('phone') !== -1 || text.indexOf('+123 456 7890') !== -1) destination = 'tel:+1234567890';
+        else if (iconClass.indexOf('envelope') !== -1 || text.indexOf('@') !== -1) destination = 'mailto:ks-digitalsolutions@ks-digitalsolutions.com';
         else if (iconClass.indexOf('map-marker') !== -1 || text.indexOf('street') !== -1) destination = 'https://maps.google.com/?q=123+Street+New+York';
         else if (iconClass.indexOf('search') !== -1) destination = 'blog.html';
         else if (text.indexOf('go back to home') !== -1 || text === 'home' || text.indexOf('site name') !== -1) destination = 'index.html';
@@ -113,7 +113,7 @@
         $status.removeClass('text-danger').addClass('text-success')
             .text('Your message is ready. Please send it from your email app.');
 
-        window.location.href = 'mailto:jivan200202@gmail.com?subject=' +
+        window.location.href = 'mailto:ks-digitalsolutions@ks-digitalsolutions.com?subject=' +
             encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
         setTimeout(function () {
@@ -130,7 +130,7 @@
         var body = 'Name: ' + (values[0] || '') + '\nEmail: ' + (values[1] || '') +
             '\n\nProject details:\n' + (values[3] || '');
 
-        window.location.href = 'mailto:jivan200202@gmail.com?subject=' +
+        window.location.href = 'mailto:ks-digitalsolutions@ks-digitalsolutions.com?subject=' +
             encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
     
